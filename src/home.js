@@ -1,7 +1,7 @@
 import food from './food.png';
 
-export default function load () {
-    const content = document.querySelector('.content');
+export default function render () {
+    const content = document.querySelector('.page-content');
     
     const brandName = document.createElement('h1');
     brandName.textContent = 'KFC';
