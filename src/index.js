@@ -1,6 +1,7 @@
 import home from './home';
 import menu from './menu';
 import contact from './contact';
+import './style.css';
 
 // Create 3 button -> home, menu and contact. Add event listeners to load the crct page content.
 const content = document.querySelector('.content');
