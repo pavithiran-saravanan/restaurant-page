@@ -4,7 +4,7 @@ export default function render () {
     const content = document.querySelector('.page-content');
     
     const brandName = document.createElement('h1');
-    brandName.textContent = 'KFC';
+    brandName.textContent = 'RFC';
 
     const foodImage = new Image();
     foodImage.src = food;
