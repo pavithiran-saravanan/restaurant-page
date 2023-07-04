@@ -14,16 +14,19 @@ const contactButton = document.createElement('li'); contactButton.textContent = 
 homeButton.addEventListener('click', (e) => {
     clear();
     home();
+    homeButton.classList.add('selected');
 });
 
 menuButton.addEventListener('click', (e) => {
     clear();
     menu();
+    menuButton.classList.add('selected');
 });
 
 contactButton.addEventListener('click', (e) => {
     clear();
     contact();
+    contactButton.classList.add('selected');
 });
 
 navBar.append(homeButton, menuButton, contactButton);
@@ -37,4 +40,7 @@ home();
 // Function to clear .content
 function clear() {
     pageContent.innerHTML = '';
+    homeButton.classList.remove('selected');
+    menuButton.classList.remove('selected');
+    contactButton.classList.remove('selected');
 }
