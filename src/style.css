@@ -1,6 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    color: #222;
 }
 
 .sticky-header{
@@ -110,4 +112,29 @@
     font-weight: 800;
     padding: 35px 0px;
     color: #222;
+}
+
+/* Section */
+.section{
+    width: 70%;
+    margin: auto;
+}
+
+/* Section Header */
+.section-header{
+    display: flex;
+    padding: 100px 0px 30px 0px;
+    font-family: 'poppins';
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-title{
+    padding: 0px 30px 0px 0px;
+}
+
+.line-box{
+    flex: 1;
+    border-top: 2px solid #eee;
+    margin-top: .7em;
 }

@@ -19,4 +19,12 @@ function renderWelcomeBanner(){
     pageContent.append(banner);
 }
 
-export {renderCtaBar, renderWelcomeBanner};
+function getSectionTitle(titleName = 'Browse Categories'){
+    const sectionHeader = document.createElement('div'); sectionHeader.classList.add('section-header');
+    const title = document.createElement('div'); title.textContent = titleName; title.classList.add('section-title');
+    const lineBox = document.createElement('div'); lineBox.classList.add('line-box');
+    sectionHeader.append(title, lineBox);
+    return sectionHeader;
+}
+
+export {renderCtaBar, renderWelcomeBanner, getSectionTitle};
