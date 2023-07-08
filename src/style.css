@@ -53,3 +53,36 @@
 .page-content{
     text-align: center;
 }
+
+/* CTA Bar */
+.cta-bar{
+    display: flex;
+    background-color: #222;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cta-text{
+    color: white;
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cta-btn{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cta-btn:hover{
+    background-color: rgb(230, 0, 0);
+}

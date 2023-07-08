@@ -1,4 +1,7 @@
+import { renderCtaBar } from './components';
+
 export default function render () {
+    renderCtaBar();
     const content = document.querySelector('.page-content');
 
     const menu = document.createElement('div');

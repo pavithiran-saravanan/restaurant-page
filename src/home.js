@@ -1,6 +1,8 @@
 import food from './food.png';
+import { renderCtaBar } from './components';
 
 export default function render () {
+    renderCtaBar();
     const content = document.querySelector('.page-content');
     
     const brandName = document.createElement('h1');
