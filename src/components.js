@@ -1,5 +1,5 @@
 
-function renderCtaBar () {
+function renderCtaBar() {
     const pageContent = document.querySelector('.page-content');
     const bar = document.createElement('div'); bar.classList.add('cta-bar');
     const text = document.createElement('span'); text.classList.add('cta-text'); text.textContent = "LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN";
@@ -8,4 +8,15 @@ function renderCtaBar () {
     pageContent.appendChild(bar);
 }
 
-export {renderCtaBar};
+function renderWelcomeBanner(){
+    const pageContent = document.querySelector('.page-content');
+    const banner = document.createElement('div'); banner.classList.add('welcome-banner');
+    const container = document.createElement('div'); container.classList.add('welcome-container');
+    const stripe = document.createElement('div'); stripe.classList.add('welcome-stripe');
+    const text = document.createElement('div'); text.classList.add('welcome-text'); text.textContent = 'WELCOME TO RFC!';
+    container.append(stripe, text);
+    banner.append(container);
+    pageContent.append(banner);
+}
+
+export {renderCtaBar, renderWelcomeBanner};

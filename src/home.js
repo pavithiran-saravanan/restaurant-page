@@ -1,8 +1,9 @@
 import food from './food.png';
-import { renderCtaBar } from './components';
+import { renderCtaBar, renderWelcomeBanner } from './components';
 
 export default function render () {
     renderCtaBar();
+    renderWelcomeBanner();
     const content = document.querySelector('.page-content');
     
     const brandName = document.createElement('h1');

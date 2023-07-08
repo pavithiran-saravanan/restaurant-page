@@ -58,31 +58,56 @@
 .cta-bar{
     display: flex;
     background-color: #222;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 14px;
 }
 
 .cta-text{
     color: white;
     font-family: 'poppins';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .cta-btn{
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
     color: white;
     background-color: red;
     border-radius: 25px;
     outline: none;
     border: none;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .cta-btn:hover{
     background-color: rgb(230, 0, 0);
+}
+
+/* Welcome Banner */
+.welcome-banner{
+    background-color: whitesmoke;
+    display: flex;
+    padding: 0px 10%;
+}
+
+.welcome-container{
+    
+}
+
+.welcome-stripe{
+    width: 54px;
+    height: 25px;
+    background: repeating-linear-gradient(90deg, red,red 9px,white 0,white 18px);
+}
+
+.welcome-text{
+    font-family: 'poppins';
+    font-size: 35px;
+    font-weight: 800;
+    padding: 35px 0px;
+    color: #222;
 }
