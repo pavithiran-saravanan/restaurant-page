@@ -27,4 +27,18 @@ function getSectionTitle(titleName = 'Browse Categories'){
     return sectionHeader;
 }
 
-export {renderCtaBar, renderWelcomeBanner, getSectionTitle};
+function getCards(categories = ['Peri Peri Chicken', 'Chicken Nuggets', 'Bucket Chicken'], images){
+    const cards = document.createElement('div'); cards.classList.add('cards', 'cards-categories');
+    for(let i = 0; i < categories.length; i++){
+        const card = document.createElement('div'); card.classList.add('card', 'card-category');
+        const imageContainer = document.createElement('div'); imageContainer.classList.add('category-img-container');
+        const image = document.createElement('img'); image.classList.add('category-img'); image.src = images[i];
+        const text = document.createElement('div'); text.classList.add('category-title'); text.textContent = categories[i];
+        imageContainer.append(image);
+        card.append(imageContainer, text);
+        cards.append(card);
+    }
+    return cards;
+}
+
+export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards};
