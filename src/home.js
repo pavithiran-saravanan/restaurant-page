@@ -29,5 +29,6 @@ export default function render () {
     const copy = document.createElement('p');
     copy.textContent = 'For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.';
 
-    content.append(categoriesSection, brandName, foodImage, copy);
+    // content.append(categoriesSection, brandName, foodImage, copy);
+    content.append(categoriesSection);
 };
