@@ -5,6 +5,12 @@
     color: #222;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .sticky-header{
     background: white;
     height: 100px;
@@ -180,4 +186,41 @@
 }
 .card:hover{
     transform: scale(1.05);
+}
+
+/* Footer */
+.footer a{
+    color: white;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'poppins';
+    padding: 50px;
+
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    place-items: center;
+    margin-top: auto;
+}
+
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo-container{
+    place-self: start;
+}
+
+.store-links-container{
+    display: flex;
+    gap: 50px;
+    justify-self: start;
 }
