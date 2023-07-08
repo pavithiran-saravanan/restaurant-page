@@ -30,6 +30,7 @@ contactButton.addEventListener('click', (e) => {
 });
 
 navBar.append(homeButton, menuButton, contactButton);
+homeButton.classList.add('selected');
 stickyHeader.appendChild(navBar);
 content.appendChild(stickyHeader);
 
