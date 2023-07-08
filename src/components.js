@@ -41,4 +41,18 @@ function getCards(categories = ['Peri Peri Chicken', 'Chicken Nuggets', 'Bucket 
     return cards;
 }
 
-export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards};
+function getFoodCard(food){
+    const foodCard = document.createElement('div'); foodCard.classList.add('food-card');
+    const imageContainer = document.createElement('div'); imageContainer.classList.add('food-image-container');
+    const image = document.createElement('img'); image.classList.add('food-image'); image.src = food.src; imageContainer.appendChild(image);
+    const detailsContainer = document.createElement('div'); detailsContainer.classList.add('food-details');
+    const title = document.createElement('div'); title.classList.add('food-title'); title.textContent = food.title;
+    const price = document.createElement('div'); price.classList.add('food-price'); price.textContent = food.price;
+    const description = document.createElement('div'); description.classList.add('food-description'); description.textContent = food.desc;
+    const btn = document.createElement('button'); btn.classList.add('cta-btn', 'btn-cart'); btn.textContent = 'Add to cart';
+    detailsContainer.append(title, price, description);
+    foodCard.append(imageContainer, detailsContainer, btn);
+    return foodCard;
+}
+
+export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards, getFoodCard};

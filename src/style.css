@@ -224,3 +224,95 @@ body{
     gap: 50px;
     justify-self: start;
 }
+
+/* Menu */
+.menu{
+    width: 65%;
+    margin: auto;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* Food Cards Container */
+.food-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 10px;
+}
+
+/* Food Card */
+.food-card{
+    /* min-height: 500px; */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+}
+
+.food-image-container{
+    background-color: #aaa;
+    height: 300px;
+    overflow: hidden;
+}
+
+.food-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.food-details{
+    text-align: left;
+    font-family: 'poppins';
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-cart{
+    margin: 0px 0px 40px 40px;
+}
+
+.food-title{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.food-price{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.food-description{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Menu Nav Card */
+.menu-nav-card{
+    padding-right: 120px;
+    font-family: 'poppins';
+    text-align: left;
+}
+
+.menu-nav-title{
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.menu-nav-list{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.menu-nav-item{
+    color: #888;
+}
