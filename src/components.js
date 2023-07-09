@@ -62,6 +62,7 @@ function getMenuSection(sectionName, foods){
     foods.forEach(food => {
         sectionCards.append(getFoodCard(food));
     });
+    section.id = sectionName.toLocaleLowerCase().split(' ').join('-'); 
     section.append(sectionCards);
     return section;
 }

@@ -15,7 +15,7 @@ export default function render () {
     renderCtaBar();
     renderWelcomeBanner();
     const categoriesSection = document.createElement('div'); categoriesSection.classList.add('categories', 'section');
-    const categoryNames = ['Peri Peri Chicken', 'Value Snackers', 'Chicken Rolls', 'Chicken Buckets', 'Biriyani Buckets', 'Box Meals', 'Burgers', 'French Fries'];
+    const categoryNames = ['Peri Peri Chicken', 'Value Snackers', 'Chicken Rolls', 'Chicken Buckets', 'Biriyani Buckets', 'Box Meals', 'Burgers', 'Beverages'];
     const categoryImages = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8];
     categoriesSection.append(getSectionTitle(), getCards(categoryNames, categoryImages));
     
