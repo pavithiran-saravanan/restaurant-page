@@ -1,4 +1,5 @@
-import { renderCtaBar } from './components';
+import { getSectionTitle, renderCtaBar } from './components';
+import { getInput } from './components';
 
 export default function render () {
     renderCtaBar();
@@ -20,9 +21,21 @@ export default function render () {
     const button = document.createElement('button'); button.classList.add('contact-left-button'); button.textContent = '123-456-789';
     contactLeft.append(stripe, title, desc, button);
 
-    const form = document.createElement('div'); form.textContent = "Form";
-    contactRight.append(form);
+    const form = document.createElement('form'); form.classList.add('form'); form.target = '#';
 
+    const feedbackContainer = document.createElement('div'); feedbackContainer.classList.add('text-input-container');
+    const feedback = document.createElement('textarea'); feedback.classList.add('text-input', 'textarea-input'); feedback.id = 'feedback'; feedback.name = 'feedback'; feedback.placeholder = 'Enter your feedback'; feedback.required = true;
+    const feedbackLabel = document.createElement('label'); feedbackLabel.classList.add('text-label'); feedbackLabel.for = 'feedback'; feedbackLabel.textContent = 'Your Feedback *';
+    feedbackContainer.append(feedbackLabel, feedback);
+
+    const submitButton = document.createElement('button'); submitButton.classList.add('submit-button'); submitButton.textContent = 'Submit';
+    form.append(getInput('Customer Name *', 'Enter name', 'customer-name', 'text')
+                , getInput('Email *', 'Enter email', 'email', 'email')
+                , getInput('Mobile Number *', 'Enter mobile number', 'mobile-number', 'tel')
+                , feedbackContainer
+                , submitButton);
+    
+    contactRight.append(form);
     contactMain.append(contactLeft, contactRight);
     contact.append(banner, contactMain);
     content.appendChild(contact);

@@ -67,4 +67,14 @@ function getMenuSection(sectionName, foods){
     return section;
 }
 
-export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards, getFoodCard, getMenuSection};
+function getInput(label, placeholder, id, type){
+    const container = document.createElement('div'); container.classList.add('text-input-container');
+    const input = document.createElement('input'); input.classList.add('text-input', `input-${id}`); input.type = type; input.id = id; input.name = id; input.placeholder = placeholder;
+    const inputLabel = document.createElement('label'); inputLabel.classList.add('text-label', `label-${id}`); inputLabel.for = id; inputLabel.textContent = label;
+    input.required = true;
+    if(type == 'tel') {input.pattern = '[0-9]+'; input.title = 'Enter a valid phone number'}
+    container.append(inputLabel, input);
+    return container;
+}
+
+export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards, getFoodCard, getMenuSection, getInput};

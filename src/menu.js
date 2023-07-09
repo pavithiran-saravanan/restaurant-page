@@ -16,7 +16,7 @@ export default function render () {
     const menuNavCard = document.createElement('div'); menuNavCard.classList.add('menu-nav-card');
     const menuNavTitle = document.createElement('div'); menuNavTitle.classList.add('menu-nav-title'); menuNavTitle.textContent = 'RFC Menu';
     const menuNavList = document.createElement('div'); menuNavList.classList.add('menu-nav-list'); 
-    const list = ['PERI PERI CHICKEN', 'VALUE SNACKERS', 'CHICKEN ROLLS', 'CHICKEN BUCKETS', 'BIRYANI BUCKETS', 'BOX MEALS', 'BURGERS', 'BEVERAGES'];
+    const list = ['Peri Peri Chicken', 'Value Snackers', 'Chicken Rolls', 'Chicken Buckets', 'Biryani Buckets', 'Box Meals', 'Burgers', 'Beverages'];
     list.forEach(item => {
         const listItem = document.createElement('a'); listItem.classList.add('menu-nav-item'); listItem.textContent = item;
         listItem.href = '#' + item.toLocaleLowerCase().split(' ').join('-'); 
