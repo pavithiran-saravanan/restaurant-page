@@ -325,3 +325,27 @@ a{
 .menu-nav-item{
     color: #888;
 }
+
+
+/* Contact Banner */
+.contact-banner{
+    display: grid;
+    height: 280px;
+    place-content: center;
+    font-family: 'poppins';
+    background: url(./images/contact/contact-banner.jpg) rgba(33, 33, 33, 0.803);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.banner-contact{
+    color: rgb(187, 187, 187);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.banner-text{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
