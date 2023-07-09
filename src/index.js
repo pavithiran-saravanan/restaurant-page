@@ -5,12 +5,14 @@ import './style.css';
 import appleStoreImage from './images/footer/apple.svg';
 import playStoreImage from './images/footer/google_play.svg';
 import rfcLogo from './images/footer/RFC_Logo.svg';
+import bucketCartIcon from './images/bucket_cart_icon.svg';
+import kfcLogo from './images/kfc.svg';
 
 // Create 3 button -> home, menu and contact. Add event listeners to load the crct page content.
 const content = document.querySelector('.content');
 const stickyHeader = document.createElement('header'); stickyHeader.classList.add('sticky-header');
 const navBar = document.createElement('ul'); navBar.classList.add('nav-bar');
-const homeButton = document.createElement('li'); homeButton.textContent = 'Home';
+const homeButton = document.createElement('img'); homeButton.src = kfcLogo; homeButton.width = '70'; homeButton.classList.add('kfc-logo');
 const menuButton = document.createElement('li'); menuButton.textContent = 'Menu';
 const contactButton = document.createElement('li'); contactButton.textContent = 'Contact';
 
@@ -41,9 +43,14 @@ contactButton.addEventListener('click', (e) => {
     goToContact();
 });
 
+const bucketCartContainer = document.createElement('div'); bucketCartContainer.classList.add('bucket-cart-container');
+const bucketCart = document.createElement('img'); bucketCart.classList.add('bucket-cart'); bucketCart.src = bucketCartIcon;
+bucketCartContainer.append(bucketCart);
+
+const navBarContainer = document.createElement('div'); navBarContainer.classList.add('nav-bar-container');
 navBar.append(homeButton, menuButton, contactButton);
 homeButton.classList.add('selected');
-stickyHeader.appendChild(navBar);
+stickyHeader.append(navBar, bucketCartContainer);
 content.appendChild(stickyHeader);
 
 const pageContent = document.createElement('div'); pageContent.classList.add('page-content');

@@ -28,6 +28,11 @@ a{
     align-items: center;
 }
 
+.kfc-logo{
+    width: 80px;
+    align-self: center;
+}
+
 .nav-bar{
     font-family: 'Poppins', sans-serif;
     list-style: none;
@@ -39,6 +44,15 @@ a{
 
 .nav-bar li{
     cursor: pointer;
+}
+
+.bucket-cart-container{
+    margin-left: auto;
+    width: 60px;
+}
+
+.bucket-cart{
+
 }
 
 .nav-bar li:hover{
