@@ -349,3 +349,47 @@ a{
     font-size: 45px;
     font-weight: 800;
 }
+
+/* Contact Main */
+.contact-main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 65%;
+    margin: auto;
+    gap: 100px;
+    text-align: left;
+}
+
+.contact-stripe{
+}
+
+.contact-left-card{
+    font-family: 'poppins';
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.contact-left-title{
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.contact-left-desc{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-left-button{
+    border-radius: 50px;
+    border: none;
+    font-family: 'poppins';
+    font-size: 16px;
+    border: 1px solid #222;
+    padding: 5px 25px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
