@@ -466,3 +466,30 @@ a{
 .contact-right-card{
 
 }
+
+@media (max-width: 1200px){
+    .contact-main{
+        width: 75%;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 900px){
+    
+}
+
+@media (max-width: 900px){
+    .contact-left-card{
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    .contact-main{
+        gap: 30px;
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+    .form{
+        margin-top: 20px;
+    }
+}
