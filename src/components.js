@@ -55,4 +55,15 @@ function getFoodCard(food){
     return foodCard;
 }
 
-export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards, getFoodCard};
+function getMenuSection(sectionName, foods){
+    const section = document.createElement('div'); section.classList.add('category-container');
+    section.append(getSectionTitle(sectionName));
+    const sectionCards = document.createElement('div'); sectionCards.classList.add('food-card-container');
+    foods.forEach(food => {
+        sectionCards.append(getFoodCard(food));
+    });
+    section.append(sectionCards);
+    return section;
+}
+
+export {renderCtaBar, renderWelcomeBanner, getSectionTitle, getCards, getFoodCard, getMenuSection};

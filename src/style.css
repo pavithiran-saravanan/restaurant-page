@@ -297,6 +297,10 @@ body{
     padding-right: 120px;
     font-family: 'poppins';
     text-align: left;
+
+    position: sticky;
+    top: 100px;
+    align-self: start;
 }
 
 .menu-nav-title{
