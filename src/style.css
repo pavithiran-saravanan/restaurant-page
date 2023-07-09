@@ -40,6 +40,7 @@ a{
     gap: 50px;
     font-weight: 600;
     user-select: none;
+    align-items: center;
 }
 
 .nav-bar li{
@@ -89,6 +90,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 14px;
+    height: 60px;
 }
 
 .cta-text{
@@ -99,11 +101,14 @@ a{
 }
 
 .cta-btn{
-    width: 180px;
-    height: 45px;
+    /* width: 180px; */
+    /* height: 45px; */
+    padding: 12px 32px;
+    max-width: 180px;
+    max-height: 45px;
     color: white;
     background-color: red;
-    border-radius: 25px;
+    border-radius: 50px;
     outline: none;
     border: none;
     font-size: 16px;
@@ -239,6 +244,10 @@ a{
     place-self: start;
 }
 
+.footer-logo{
+    width: 100%;
+}
+
 .store-links-container{
     display: flex;
     gap: 50px;
@@ -252,6 +261,7 @@ a{
     padding-bottom: 100px;
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 110px;
 }
 
 /* Food Cards Container */
@@ -314,7 +324,6 @@ a{
 
 /* Menu Nav Card */
 .menu-nav-card{
-    padding-right: 120px;
     font-family: 'poppins';
     text-align: left;
 
@@ -467,15 +476,25 @@ a{
 
 }
 
+@media (max-width: 1450px){
+    .menu{
+        width: 75%;
+        gap: 80px;
+    }
+}
+
 @media (max-width: 1200px){
     .contact-main{
         width: 75%;
         gap: 50px;
     }
-}
-
-@media (max-width: 900px){
-    
+    .footer{
+        gap: 60px;
+    }
+    .menu{
+        width: 85%;
+        gap: 60px;
+    }
 }
 
 @media (max-width: 900px){
@@ -491,5 +510,105 @@ a{
     }
     .form{
         margin-top: 20px;
+    }
+    .menu{
+        gap: 40px;
+        padding-bottom: 70px;
+    }
+    .section-header{
+        font-size: 28px;
+        padding: 60px 0px 40px 0px;
+    }
+    .menu-nav-title{
+        font-size: 30px;
+    }
+    .section{
+        width: 85%;
+        padding-bottom: 70px;
+    }
+    .contact-main{
+        padding-bottom: 70px;
+    }
+    .cta-text{
+        font-size: 14px;
+    }
+    .cta{
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+    .cards{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        place-content: center;
+        gap: 20px;
+    }
+    .footer-logo-container{
+        place-self: center;
+        width: 50px;
+    }
+    .store-links-container{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .menu-nav-card{
+        display: none;
+    }
+    .section{
+        padding-bottom: 50px;
+    }
+    .menu{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .contact-main{
+        padding-bottom: 50px;
+    }
+    .section-header{
+        display: block;
+    }
+    .cta{
+        display: none;
+    }
+    .cta-bar{
+        height: 40px;
+    }
+    .cta-text{
+        font-size: 12px;
+    }
+    .section-header{
+        font-size: 28px;
+        padding: 40px 0px 30px 0px;
+    }
+    .welcome-banner{
+        justify-content: center;
+    }
+    .welcome-text{
+        font-size: 30px;
+    }
+    .nav-bar{
+        gap: 20px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    .sticky-header{
+        padding: 30px;
+    }
+    .kfc-logo{
+        width: 60px;
+    }
+    .bucket-cart-container{
+        width: 45px;
+    }
+    .footer{
+        gap: 15px;
+        padding: 30px;
     }
 }
