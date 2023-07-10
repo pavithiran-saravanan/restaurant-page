@@ -14,7 +14,7 @@ export default function render () {
 
     // Menu Nav Bar
     const menuNavCard = document.createElement('div'); menuNavCard.classList.add('menu-nav-card');
-    const menuNavTitle = document.createElement('div'); menuNavTitle.classList.add('menu-nav-title'); menuNavTitle.textContent = 'RFC Menu';
+    const menuNavTitle = document.createElement('div'); menuNavTitle.classList.add('menu-nav-title'); menuNavTitle.textContent = 'KFC Menu';
     const menuNavList = document.createElement('div'); menuNavList.classList.add('menu-nav-list'); 
     const list = ['Peri Peri Chicken', 'Value Snackers', 'Chicken Rolls', 'Chicken Buckets', 'Biryani Buckets', 'Box Meals', 'Burgers', 'Beverages'];
     list.forEach(item => {

@@ -13,7 +13,7 @@ function renderWelcomeBanner(){
     const banner = document.createElement('div'); banner.classList.add('welcome-banner');
     const container = document.createElement('div'); container.classList.add('welcome-container');
     const stripe = document.createElement('div'); stripe.classList.add('welcome-stripe');
-    const text = document.createElement('div'); text.classList.add('welcome-text'); text.textContent = 'WELCOME TO RFC!';
+    const text = document.createElement('div'); text.classList.add('welcome-text'); text.textContent = 'WELCOME TO KFC!';
     container.append(stripe, text);
     banner.append(container);
     pageContent.append(banner);

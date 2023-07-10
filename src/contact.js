@@ -17,7 +17,7 @@ export default function render () {
 
     const stripe = document.createElement('div'); stripe.classList.add('welcome-stripe', 'contact-stripe');
     const title = document.createElement('div'); title.classList.add('contact-left-title'); title.textContent = "TELL US HOW WE'RE DOING";
-    const desc = document.createElement('div'); desc.classList.add('contact-left-desc'); desc.textContent = "Contact us here for questions regarding RFC complaints, refunds, and dislikes or likes about your RFC experience!";
+    const desc = document.createElement('div'); desc.classList.add('contact-left-desc'); desc.textContent = "Contact us here for questions regarding KFC complaints, refunds, and dislikes or likes about your KFC experience!";
     const button = document.createElement('button'); button.classList.add('contact-left-button'); button.textContent = '123-456-789';
     contactLeft.append(stripe, title, desc, button);
 
