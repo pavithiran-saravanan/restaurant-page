@@ -7,7 +7,7 @@ Check out the live demo of the project here https://pavithiran-saravanan.github.
 # Built With
 - HTML
 - CSS
-- Javascript
+- JavaScript
 - Webpack
 
 # Features
