@@ -1,5 +1,5 @@
 # KFC Clone
-A custom UI Clone of KFC India website.
+A custom UI clone of KFC India website.
 
 # Demo
 Check out the live demo of the project here https://pavithiran-saravanan.github.io/restaurant-page/
@@ -11,8 +11,10 @@ Check out the live demo of the project here https://pavithiran-saravanan.github.
 - Webpack
 
 # Features
-- Uses a single HTML file. All of the website's content is injected into the DOM by Javascript
+- Uses a single HTML file
+- All of the website's content is injected into the DOM by Javascript
 - Logic is written in modules and bundled to a single JavaScript file for production using Webpack
+- Navigation without page refresh
 - Mobile friendly
 
 # Screenshots
