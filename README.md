@@ -11,9 +11,8 @@ Check out the live demo of the project here https://pavithiran-saravanan.github.
 - Webpack
 
 # Features
-- Uses a single HTML file
-- All of the website's content is injected into the DOM by Javascript
-- Logic is written in modules and bundled to a single JavaScript file for production using Webpack
+- Uses a single HTML file. All of the website's content is injected into the DOM by Javascript
+- JavaScript logic is written in modules and bundled into a single file using Webpack
 - Navigation without page refresh
 - Mobile friendly
 
